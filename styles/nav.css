@@ -1,0 +1,59 @@
+.nav-box {
+  height: 80px;
+  background-color: #0d1117;
+  box-shadow: 1px 0px 10px rgb(79, 120, 253, 0.6);
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0px 100px 0px 0px;
+}
+
+.navigation li {
+  display: inline-block;
+}
+
+.nav-link {
+  background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+  background-size: 300% 300%;
+  background-clip: text;
+  color: transparent;
+  animation: color 12s ease-in-out infinite;
+  text-decoration: none;
+  
+  font-size: 20px;
+  margin: 0px 40px 0px 0px;
+}
+
+.nav-link:hover {
+text-shadow: 2px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-link {
+    font-size: 18px;
+    margin: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navigation {
+    margin: 0px 50px 0px 0px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    margin: 0 15px 0 0;
+  }
+}
+

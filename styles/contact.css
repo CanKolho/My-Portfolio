@@ -1,0 +1,97 @@
+.contact-container {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+
+  padding: 30px 30px 30px 30px;
+  box-shadow: 1px 0px 10px rgb(79, 120, 253);
+  border-radius: 10px;
+
+  margin-bottom: 85px;
+}
+
+.name-input-header,
+.email-input-header,
+.msg-input-header {
+  color: rgb(103, 103, 243);
+}
+
+.name-input,
+.email-input,
+.msg-input {
+  background-color: rgb(14, 14, 14);
+  border: 1px solid rgb(1, 119, 255);
+  border-radius: 5px;
+  margin: 4px 0px 15px 0px;
+  padding: 10px 10px 10px 10px;
+  width: 300px;
+  color: white;
+  transition: 
+    box-shadow 0.15s, 
+    color 0.15s;
+}
+
+.msg-input {
+  height: 100px;
+  resize: vertical;
+  min-height: 100px; 
+  max-height: 500px;
+}
+
+.name-input:focus,
+.email-input:focus,
+.msg-input:focus {
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0px 0px 10px rgb(26, 200, 243);
+  outline: none;
+}
+
+.send-button {
+  background-color: rgb(14, 14, 14);
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgb(1, 119, 255);
+  border-radius: 4px;
+  padding: 5px 145px;
+  margin-top: 20px;
+  transition: 
+    box-shadow 0.15s,
+    color 0.15s;
+  text-shadow: 1px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.send-button:hover {
+  background-color: rgb(20, 20, 20);
+  box-shadow: 0px 0px 10px rgb(26, 200, 243);
+  text-shadow: 1px 0px 10px rgba(26, 200, 243, 0.7);
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .contact-header {
+    font-size: 18px;
+  }
+
+  .contact-container {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .name-input,
+  .email-input,
+  .msg-input {
+    margin: 4px 0px 15px 0px;
+    padding: 10px 10px 10px 10px;
+    width: 200px;
+  }
+
+  .msg-input {
+    height: 70px;
+  }
+
+  .send-button {
+    padding: 5px 95px;
+    margin-top: 10px;
+ 
+    text-shadow: 1px 0px 10px rgba(255, 255, 255, 0.7);
+  }
+}

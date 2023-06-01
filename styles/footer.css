@@ -1,0 +1,12 @@
+.footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.copyright-text {
+    color: rgb(57, 59, 104);
+}

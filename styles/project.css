@@ -1,0 +1,71 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 30px;
+  margin-bottom: 85px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 1px 0px 10px rgb(243, 79, 79);
+  padding: 10px 10px 10px 10px;
+
+  border-radius: 10px;
+}
+
+.calendar-pic,
+.email-pic {
+  border-radius: 10px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.calendar-pic {
+  width: 200px;
+}
+
+.email-pic {
+  width: 140px;
+}
+
+.project-sub-header {
+  margin-top: 10px;
+  text-shadow: 1px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.project-des {
+  width: 250px;
+  margin-top: 5px;
+  line-height: 150%;
+  text-align: center;  
+}
+
+@media (max-width: 650px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .project {
+    padding: 8px 8px 8px 8px;
+  }
+
+  .projects-header {
+    font-size: 18px; 
+  }
+
+  .project-sub-header {
+    font-size: 16px; 
+  }
+
+  .project-des {
+    font-size: 13px; 
+    width: auto; 
+  }
+}

@@ -1,0 +1,52 @@
+.hero-section {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(37, 39, 68);
+
+}
+
+.my-name {
+  background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+  background-clip: text;
+  color: transparent;
+  font-size: 100px;
+}
+
+.greetings {
+  margin: 0px 0px 15px;
+}
+
+.descreption {
+  margin-bottom: 50px;
+  line-height: 150%;
+}
+
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+
+  50%{
+    background-position:100% 50%;
+  }
+
+  10%{
+    background-position: 0 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .my-name {
+    font-size: 55px;  
+  }
+
+  .descreption {
+    font-size: 12px;  
+    margin-bottom: 20px; 
+  }
+
+  .greetings {
+    font-size: 17px;  
+    margin-bottom: 10px; 
+  }
+}

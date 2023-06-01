@@ -1,0 +1,64 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 30px;
+  margin-bottom: 85px;
+}
+
+.skills-grid div {
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.skills-grid img {
+  width: 90px;
+}
+
+.skill-html {
+  box-shadow: 0px 0px 10px rgb(245, 115, 40);
+}
+
+.skill-css {
+  box-shadow: 0px 0px 10px rgb(0, 101, 252);
+}
+
+.skill-scala {
+  box-shadow: 0px 0px 10px rgb(255, 0, 0);
+}
+
+.skill-python {
+  box-shadow: 0px 0px 10px rgb(224, 240, 2);
+}
+
+.skill-mysql {
+  box-shadow: 0px 0px 10px rgb(253, 152, 0);
+}
+
+.skill-git {
+  box-shadow: 0px 0px 10px rgb(255, 124, 119);
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 38px;
+    row-gap: 25px;
+  }
+
+  .skills-header {
+    font-size: 18px;
+  }
+
+  .skills-grid img {
+    width: 50px;
+  }
+}
