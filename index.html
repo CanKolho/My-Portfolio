@@ -82,6 +82,9 @@
                 My first project ever. 
                 Implemented with scala FX library.
               </p>
+              <a class="pdfLink" href="pdf/Calendar_Doc.pdf">
+                Check it out
+              </a>
             </div>
           </div>
         
@@ -102,15 +105,18 @@
         </div>
       </section>
 
-      <form id="contact" class="contact-section">
+      <form id="contact" class="contact-section"
+        action="https://formsubmit.co/4da29a989dd9241095e5b6fd4815da9a" method="post">
         <h1 class="contact-header">Get In Touch With Me</h1>
         <div class="contact-container">
+          <input type="hidden" name="_subject" value="New message from My Portfolio!">
+          <input type="hidden" name="_next" value="https://cankolho.github.io/My-Portfolio/thankyou.html">
           <p class="name-input-header">Name</p>
-          <input type="text" class="name-input" placeholder="Enter Your Name">
+          <input type="text" name="name" class="name-input" placeholder="Enter Your Name" required>
           <p class="email-input-header">Email</p>
-          <input type="email" class="email-input" placeholder="Enter Your Email">
+          <input type="email" name="email" class="email-input" placeholder="Enter Your Email" required>
           <P class="msg-input-header">Message</P>
-          <textarea class="msg-input" placeholder="Enter Your Message"></textarea> 
+          <textarea name="message" class="msg-input" placeholder="Enter Your Message" required></textarea> 
           <button type="submit" class="send-button">Send</button>
         </div>
       </form>
