@@ -28,6 +28,11 @@ body {
   border-bottom-color: rgb(37, 39, 68);
 }
 
+.projects-section,
+.contact-section {
+  animation: fade-in-right 1s;
+}
+
 .skills-header,
 .projects-header,
 .contact-header {
@@ -39,5 +44,18 @@ body {
 @media only screen and (max-width: 500px) {
   body {
     padding: 150px 60px 0px 60px;
+  }
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
   }
 }

@@ -1,11 +1,24 @@
 .hero-section {
+  position: relative;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: rgb(37, 39, 68);
+  border-bottom-color: #0d1117;
+}
 
+.hero-section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(37, 39, 68);;
+  animation: showBottom 1s ease forwards;
+  animation-delay: 0.9s; 
 }
 
 .my-name {
+  position: relative;
   background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -14,12 +27,39 @@
 }
 
 .greetings {
+  position: relative;
   margin: 0px 0px 15px;
 }
 
 .descreption {
+  position: relative;
   margin-bottom: 50px;
   line-height: 150%;
+}
+
+.my-name::before,
+.greetings::before,
+.descreption::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0d1117;
+  animation: showRight 1s ease forwards;
+}
+
+.my-name::before {
+  animation-delay: 0.6s;
+}
+
+.greetings::before {
+  animation-delay: 0.5s;
+}
+
+.descreption::before {
+  animation-delay: 0.7s;
 }
 
 @keyframes color {
@@ -49,5 +89,21 @@
   .greetings {
     font-size: 17px;  
     margin-bottom: 10px; 
+  }
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes showBottom {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
